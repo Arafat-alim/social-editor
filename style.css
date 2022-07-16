@@ -335,3 +335,27 @@ button {
     background-color: #26438D;
 
 }
+
+.canvas {}
+
+.artboard {}
+
+.canvas__bg-img {}
+
+.canvas__fg-img {}
+
+.canvas__circle {}
+
+.canvas__circle:nth-of-type(1) {}
+
+.canvas__circle:nth-of-type(2) {}
+
+.canvas__circle:nth-of-type(3) {}
+
+.canvas__circle:nth-of-type(4) {}
+
+.tools {}
+
+.tool {}
+
+.tool__icon {}
