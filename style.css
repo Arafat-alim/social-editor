@@ -40,6 +40,20 @@ button {
     }
 }
 
+@keyframes fade-in-from-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* ---------------- */
+
 
 .header {
     background-image: linear-gradient(to right, #18A0BE, #622D89);
@@ -97,7 +111,76 @@ button {
 .sidebar {
     background-color: #10171A;
     width: 75px;
+    display: flex;
+    flex-direction: column;
 }
+
+.menu {}
+
+.menu__button {
+    padding: 19px 0;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: all 0.4s;
+    animation: fade-in-from-left 0.5s;
+}
+
+.menu__button:hover {
+    color: #fff;
+    background-color: #2B363D;
+    cursor: pointer;
+}
+
+.menu__button:focus {
+    color: #fff;
+    background-color: #2B363D;
+    cursor: pointer;
+}
+
+.menu__button--active {
+    background-color: #2B363B;
+    color: #fff;
+    position: relative;
+}
+
+.menu__button--active::before {
+    content: "";
+    background-color: #375BB6;
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.menu__icon {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.menu__text {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 60px;
+    transform: rotate(-90deg);
+
+}
+
+.footer__text {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.15);
+    white-space: nowrap;
+}
+
 
 /* ------------------- */
 .panel {
