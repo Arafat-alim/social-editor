@@ -193,3 +193,21 @@ button {
     background-color: #EDF1F3;
     flex: 1;
 }
+
+/* panel */
+
+.panel {}
+
+.panel__top {}
+
+.first-heading {}
+
+.panel__collapse-icon {}
+
+.panel__images {}
+
+.panel__img {}
+
+.panel__btn {}
+
+.panel__upload-icon {}
